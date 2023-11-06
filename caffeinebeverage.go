@@ -13,17 +13,17 @@ func (b *CaffeineBeverage) PourInCup() {
 	fmt.Println("Pouring into cup")
 }
 
-func (t *CaffeineBeverage) Brew() {
-	fmt.Println("Steeping the tea")
+func (b *CaffeineBeverage) Brew() {
+	// This method should be overridden by concrete subclasses
 }
 
-func (t *CaffeineBeverage) AddCondiments() {
-	fmt.Println("Adding lemon")
+func (b *CaffeineBeverage) AddCondiments() {
+	// This method should be overridden by concrete subclasses
 }
 
 func (b *CaffeineBeverage) PrepareBeverage() {
 	b.BoilWater()
-	b.Brew()
+	b.Brew() // Call the overridden Brew method
 	b.PourInCup()
-	b.AddCondiments()
+	b.AddCondiments() // Call the overridden AddCondiments method
 }

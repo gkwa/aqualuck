@@ -7,12 +7,7 @@ import (
 
 func Main() int {
 	slog.Debug("aqualuck", "test", true)
-	main()
 
-	return 0
-}
-
-func main() {
 	tea := &Tea{}
 	coffee := &Coffee{}
 
@@ -21,4 +16,6 @@ func main() {
 
 	fmt.Println("\nMaking coffee:")
 	coffee.PrepareBeverage()
+
+	return 0
 }

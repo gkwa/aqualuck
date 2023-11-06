@@ -4,7 +4,9 @@ package aqualuck
 type BeverageTemplate interface {
 	BoilWater()
 	PourInCup()
-	PrepareBeverage()
+
 	Brew()
 	AddCondiments()
+
+	PrepareBeverage()
 }
