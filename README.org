@@ -1,0 +1,7 @@
+* aqualuck
+
+This is a description of my aqualuck.
+
+** Usage
+
+To use my project, run this command: ./myproject --verbose
